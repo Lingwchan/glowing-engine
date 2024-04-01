@@ -41,8 +41,3 @@ jobs:
       run: sc start ngrok
     - name: Connecting Process
       run: cmd /c ngrok-user.bat
-    - name: 
-      run: cmd /c ngrok-loop.bat
-    - run: 81988hours
-    - run: 182828 sec
-    -  run: sleep 12h

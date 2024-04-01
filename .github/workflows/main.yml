@@ -1,13 +1,14 @@
-name: Windows 2019
+name: Windows Server 2019
 
 on: 
   workflow_dispatch:
 
 jobs:
   build:
-    name: Windows 10 build
-    runs-on: windows-2019 
-    timeout-minutes: 6069
+    name: Windows 10 Build
+    runs-on: windows-2019
+    timeout-minutes: 9999
+    
     steps:
     - name: Creating Local User
       run: |
@@ -41,5 +42,5 @@ jobs:
       run: sc start ngrok
     - name: Connecting Process
       run: cmd /c ngrok-user.bat
-    - name: run loop
+    - name: Looping Process
       run: cmd /c ngrok-loop.bat
